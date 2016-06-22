@@ -77,9 +77,13 @@ public class ThirdStage
                 }
                 gameGoing = false;
             }
-            if (boneco.x + boneco.width > 798)
+            if(dino.getAlive() == false)
             {
-                new SecondStage(backGround, window, keyboard, mouse);
+                backGround.setBackGround("youWin.png");
+                backGround.draw();
+                window.update();
+                while(!keyboard.keyDown(Keyboard.ENTER_KEY))
+                {}
                 gameGoing = false;
             }
         }

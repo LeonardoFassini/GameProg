@@ -83,6 +83,7 @@ public class SecondStage
             if (boneco.x + boneco.width > 798)
             {
                 new ThirdStage(backGround, window, keyboard, mouse);
+                gameGoing = false;
             }
             
         }
